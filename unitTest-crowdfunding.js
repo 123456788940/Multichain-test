@@ -26,7 +26,7 @@ describe("Crowdfunding contract", function () {
 
 
     });
-    it("Should set the funding goal correctlty", async function () {
+    it("Should set the funding goal correctly", async function () {
         expect(await crowdfunding.fundingGoal()).to.equal(fundingGoal);
     });
 
