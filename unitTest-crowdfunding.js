@@ -31,7 +31,7 @@ describe("Crowdfunding contract", function () {
     });
 
 
-    it("Sould set the deadline correctly", async function () {
+    it("Should set the deadline correctly", async function () {
         const expectedDeadline = (await ethers.provider.getBlock("latest")).timestamp + durationInMinutes * 60;
         expect(await crowdfunding.deadline()).to.equal(expectedDeadline);
 
